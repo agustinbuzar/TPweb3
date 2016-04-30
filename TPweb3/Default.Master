@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="TPweb3.Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="content/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+<link href="content/css/style.css" rel="stylesheet" media="screen"/>
+<script src="scripts/bootstrap.min.js"></script>
+
+    <title>APP web3</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <div class="pie">
+        Programación web 3 - Velazco, Murano, Calvo, Buzarquis
+    </div>
+</body>
+</html>
