@@ -7,9 +7,9 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace TPweb3 {
+namespace TPweb3.cocinero {
     
     
-    public partial class home {
+    public partial class perfil {
     }
 }

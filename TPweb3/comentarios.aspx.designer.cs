@@ -10,6 +10,6 @@
 namespace TPweb3 {
     
     
-    public partial class home {
+    public partial class comentarios {
     }
 }
