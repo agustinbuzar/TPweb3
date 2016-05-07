@@ -57,7 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="cocinero\evento.aspx" />
     <Content Include="cocinero\perfil.aspx" />
+    <Content Include="cocinero\receta.aspx" />
     <Content Include="comentarios.aspx" />
     <Content Include="content\css\bootstrap-theme.css" />
     <Content Include="content\css\bootstrap-theme.min.css" />
@@ -80,12 +82,26 @@
     <Compile Include="Cocinero.Master.designer.cs">
       <DependentUpon>Cocinero.Master</DependentUpon>
     </Compile>
+    <Compile Include="cocinero\evento.aspx.cs">
+      <DependentUpon>evento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cocinero\evento.aspx.designer.cs">
+      <DependentUpon>evento.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cocinero\perfil.aspx.cs">
       <DependentUpon>perfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="cocinero\perfil.aspx.designer.cs">
       <DependentUpon>perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cocinero\receta.aspx.cs">
+      <DependentUpon>receta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cocinero\receta.aspx.designer.cs">
+      <DependentUpon>receta.aspx</DependentUpon>
     </Compile>
     <Compile Include="Comensal.Master.cs">
       <DependentUpon>Comensal.Master</DependentUpon>
