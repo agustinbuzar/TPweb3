@@ -11,7 +11,7 @@
             <br />
             <asp:TextBox ID="txbContraseña" runat="server" type="text" class="form-control" placeholder="Ingrese contraseña"></asp:TextBox>
             <br />
-            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" class="btn btn-default btn-lg btn-block" />
+            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" class="btn btn-default btn-lg btn-block" OnClick="btnIngresar_Click" />
         </div>
         <div class="col-sm-4 col-lg-4 col-md-4"></div>
     </div>
