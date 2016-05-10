@@ -31,13 +31,22 @@ namespace TPweb3 {
         protected global::System.Web.UI.WebControls.TextBox txbmail;
         
         /// <summary>
-        /// Control txbcontraseña.
+        /// Control txbContraseña.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbcontraseña;
+        protected global::System.Web.UI.WebControls.TextBox txbContraseña;
+        
+        /// <summary>
+        /// Control RegularExpressionValidator1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
         /// Control txbReContraseña.

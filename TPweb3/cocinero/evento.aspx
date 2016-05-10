@@ -15,8 +15,15 @@
                 <h4>Nombre</h4>
                 <asp:TextBox ID="txbNombre" runat="server" type="text" class="form-control"></asp:TextBox>
 
-                <h4>Fecha</h4>
-                <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                <h4>Seleccione una fecha</h4>
+                <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="#D8D8D8" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
+                    <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                    <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+                    <OtherMonthDayStyle ForeColor="#999999" />
+                    <SelectedDayStyle BackColor="#BDBDBD" ForeColor="White" />
+                    <TitleStyle BackColor="White" BorderColor="#D8D8D8" BorderWidth="1px" Font-Bold="True" Font-Size="12pt" ForeColor="#424242" />
+                    <TodayDayStyle BackColor="#CCCCCC" />
+                </asp:Calendar>
 
                 <h4>Descripción</h4>
                 <textarea id="TextArea1" class="form-control" rows="3"></textarea>

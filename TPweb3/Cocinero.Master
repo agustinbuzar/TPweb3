@@ -35,7 +35,7 @@
                         <a href="receta.aspx">Crear receta</a>
                     </li>
                     <li>
-                        <a href="#">Crear evento</a>
+                        <a href="evento.aspx">Crear evento</a>
                     </li>
                     <li>
                         <a href="#">Cerrar sesión</a>

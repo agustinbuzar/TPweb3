@@ -8,9 +8,13 @@
         <div class="col-sm-4 col-lg-4 col-md-4">
             <h1>Ingrese a MasterChuf</h1>
             <asp:TextBox ID="txbMail" runat="server" type="text" class="form-control" placeholder="Ingrese E-mail"></asp:TextBox>
+            <asp:RequiredFieldValidator ErrorMessage="Complete el E-mail" ControlToValidate="txbMail" runat="server"  ForeColor="Red" />
             <br />
-            <asp:TextBox ID="txbContraseña" runat="server" type="text" class="form-control" placeholder="Ingrese contraseña"></asp:TextBox>
+
+            <asp:TextBox ID="txbContraseña" runat="server" type="password" class="form-control" placeholder="Ingrese contraseña"></asp:TextBox>
+            <asp:RequiredFieldValidator ErrorMessage="Ingrese contraseña" ControlToValidate="txbContraseña" runat="server"  ForeColor="Red" />
             <br />
+
             <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" class="btn btn-default btn-lg btn-block" OnClick="btnIngresar_Click" />
         </div>
         <div class="col-sm-4 col-lg-4 col-md-4"></div>

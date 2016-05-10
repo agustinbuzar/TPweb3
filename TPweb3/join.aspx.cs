@@ -11,7 +11,20 @@ namespace TPweb3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+          
+        }
 
+        protected void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            Page.Validate();
+            if (Page.IsValid)
+            {
+                //enviar a su correspondiente pagina
+            }
+            else
+            {
+                    //mensaje de error
+            }        
         }
     }
 }

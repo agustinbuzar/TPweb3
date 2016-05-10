@@ -16,20 +16,30 @@ namespace TPweb3
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-            var user = txbMail.Text;
-            string url;
-
-            switch (user)
+            Page.Validate();
+            if (Page.IsValid)
             {
-                case "cocinero":
-                    url = "cocinero/perfil.aspx";
-                    Response.Redirect(url);
-                    break;
-                case "comensal":
-                    url = "comensal/perfil.aspx";
-                    Response.Redirect(url);
-                    break;
+                var user = txbMail.Text;
+                string url;
+
+                switch (user)
+                {
+                    case "cocinero":
+                        url = "cocinero/perfil.aspx";
+                        Response.Redirect(url);
+                        break;
+                    case "comensal":
+                        url = "comensal/perfil.aspx";
+                        Response.Redirect(url);
+                        break;
+                }
             }
+            else
+            {
+                //mensaje de error
+            }   
+            
+            
 
         }
     }
