@@ -31,22 +31,31 @@ namespace TPweb3.cocinero {
         protected global::System.Web.UI.WebControls.TextBox txbNombre;
         
         /// <summary>
-        /// Control Calendar1.
+        /// Control txbFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.TextBox txbFecha;
         
         /// <summary>
-        /// Control CheckBoxList1.
+        /// Control txbDescrip.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList1;
+        protected global::System.Web.UI.WebControls.TextBox txbDescrip;
+        
+        /// <summary>
+        /// Control cbRecetas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList cbRecetas;
         
         /// <summary>
         /// Control txbCantComenzales.

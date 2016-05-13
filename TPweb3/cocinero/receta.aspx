@@ -10,37 +10,42 @@
             <h1>Crear receta</h1>
             <br />
 
-            <form id="form1" runat="server">
+            <form id="formCrearReceta" runat="server">
 
                 <h4>Nombre</h4>
                 <asp:TextBox ID="txbNombre" runat="server" type="text" class="form-control"></asp:TextBox>
+                <asp:RequiredFieldValidator ErrorMessage="Ingrese un nombre" ControlToValidate="txbNombre" runat="server" ForeColor="Red" Display="Dynamic"/>
 
                 <div class="row">
                     <div class="col-sm-6 col-lg-6 col-md-6 center">
                         <h4>Tiempo de cocción (minutos)</h4>
                     </div>
                     <div class="col-sm-6 col-lg-6 col-md-6" style="margin-top: 10px;">
-                        <asp:TextBox ID="txbTiempoCoc" runat="server" type="text" class="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txbTiempoCoccion" runat="server" type="text" class="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ErrorMessage="Complete el tiempo de coccion" ControlToValidate="txbTiempoCoccion" runat="server" ForeColor="Red" Display="Dynamic" />
+                        <asp:RangeValidator ErrorMessage="Ingrese un tiempo valido (Minimo 30 | Maximo 600)" ControlToValidate="txbTiempoCoccion" runat="server" MaximumValue="600" MinimumValue="30" ForeColor="Red" Display="Dynamic"/>
                     </div>
                 </div>
 
                 <h4>Descripción</h4>
-                <textarea id="TextArea1" class="form-control" rows="3"></textarea>
+                <textarea id="txtDescrip" class="form-control" rows="3"></textarea>
 
                 <h4>Pasos de realización</h4>
-                <textarea id="TextArea2" class="form-control" rows="5"></textarea>
+                <textarea id="txtRealizacion" class="form-control" rows="5"></textarea>
 
                 <h4>Ingredientes</h4>
-                <textarea id="TextArea3" class="form-control" rows="5"></textarea>
+                <textarea id="txtIngredientes" class="form-control" rows="5"></textarea>
 
                 <h4>Tipo de receta</h4>
-                <asp:DropDownList ID="DropDownList1" runat="server" class="form-control">
-                    <asp:ListItem>- Seleccione tipo -</asp:ListItem>
+                <asp:DropDownList ID="ddlTipoReceta" runat="server" class="form-control">
+                    <asp:ListItem>-Seleccione tipo-</asp:ListItem>
                     <asp:ListItem>Gourmet</asp:ListItem>
                     <asp:ListItem>Diet</asp:ListItem>
                     <asp:ListItem>Casera</asp:ListItem>
                 </asp:DropDownList>
+                <asp:RequiredFieldValidator ErrorMessage="Seleccine un tipo de receta" ControlToValidate="ddlTipoReceta" InitialValue="-Seleccione tipo-" runat="server" ForeColor="Red" Display="Dynamic" />
                 <br />
+
                 <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" class="btn btn-default btn-lg btn-block" />
 
             </form>
