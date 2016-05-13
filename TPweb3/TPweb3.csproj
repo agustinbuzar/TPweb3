@@ -60,6 +60,7 @@
     <Content Include="cocinero\evento.aspx" />
     <Content Include="cocinero\perfil.aspx" />
     <Content Include="cocinero\receta.aspx" />
+    <Content Include="comensal\reservar.aspx" />
     <Content Include="comentarios.aspx" />
     <Content Include="content\css\bootstrap-theme.css" />
     <Content Include="content\css\bootstrap-theme.min.css" />
@@ -75,6 +76,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clases\Evento.cs" />
     <Compile Include="Cocinero.Master.cs">
       <DependentUpon>Cocinero.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -109,6 +111,13 @@
     </Compile>
     <Compile Include="Comensal.Master.designer.cs">
       <DependentUpon>Comensal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="comensal\reservar.aspx.cs">
+      <DependentUpon>reservar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comensal\reservar.aspx.designer.cs">
+      <DependentUpon>reservar.aspx</DependentUpon>
     </Compile>
     <Compile Include="comentarios.aspx.cs">
       <DependentUpon>comentarios.aspx</DependentUpon>
@@ -160,9 +169,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="comensal\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

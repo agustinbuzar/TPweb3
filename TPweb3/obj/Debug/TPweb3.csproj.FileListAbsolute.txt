@@ -3,3 +3,8 @@ c:\users\agustinbuzar\documents\visual studio 2012\Projects\TPweb3\TPweb3\bin\TP
 c:\users\agustinbuzar\documents\visual studio 2012\Projects\TPweb3\TPweb3\obj\Debug\TPweb3.csprojResolveAssemblyReference.cache
 c:\users\agustinbuzar\documents\visual studio 2012\Projects\TPweb3\TPweb3\obj\Debug\TPweb3.dll
 c:\users\agustinbuzar\documents\visual studio 2012\Projects\TPweb3\TPweb3\obj\Debug\TPweb3.pdb
+C:\Users\pc mia\Desktop\TPweb3-master\TPweb3\bin\TPweb3.dll
+C:\Users\pc mia\Desktop\TPweb3-master\TPweb3\bin\TPweb3.pdb
+C:\Users\pc mia\Desktop\TPweb3-master\TPweb3\obj\Debug\TPweb3.csprojResolveAssemblyReference.cache
+C:\Users\pc mia\Desktop\TPweb3-master\TPweb3\obj\Debug\TPweb3.dll
+C:\Users\pc mia\Desktop\TPweb3-master\TPweb3\obj\Debug\TPweb3.pdb

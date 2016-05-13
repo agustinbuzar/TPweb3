@@ -13,5 +13,13 @@ namespace TPweb3.cocinero
         {
 
         }
+
+        protected void btnIngresar_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid) {
+                txbNombre.Text = "pinocho";
+            }
+                
+        }
     }
 }
