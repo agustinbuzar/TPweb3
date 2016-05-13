@@ -1,5 +1,0 @@
-c:\users\agustinbuzar\documents\visual studio 2012\Projects\TPweb3\TPweb3\bin\TPweb3.dll
-c:\users\agustinbuzar\documents\visual studio 2012\Projects\TPweb3\TPweb3\bin\TPweb3.pdb
-c:\users\agustinbuzar\documents\visual studio 2012\Projects\TPweb3\TPweb3\obj\Debug\TPweb3.csprojResolveAssemblyReference.cache
-c:\users\agustinbuzar\documents\visual studio 2012\Projects\TPweb3\TPweb3\obj\Debug\TPweb3.dll
-c:\users\agustinbuzar\documents\visual studio 2012\Projects\TPweb3\TPweb3\obj\Debug\TPweb3.pdb
