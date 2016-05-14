@@ -14,34 +14,26 @@
             <form id="form1" runat="server">
                 <h4>Nombre</h4>
                 <asp:TextBox ID="txbNombre" runat="server" type="text" class="form-control"></asp:TextBox>
-                <asp:RequiredFieldValidator ErrorMessage="Ingrese el nombre del evento" ControlToValidate="txbNombre" runat="server" ForeColor="Red" Display="Dynamic"/>
 
                 <h4>Seleccione una fecha</h4>
-                <asp:TextBox ID="txbFecha" runat="server" type="text" class="form-control" TextMode="Date"></asp:TextBox>
-                <asp:RequiredFieldValidator ErrorMessage="Ingrese una fecha" ControlToValidate="txbFecha" runat="server" ForeColor="Red" Display="Dynamic"/>  
-                <asp:CompareValidator ErrorMessage="Ingrese una fecha valida dd/mm/aaaa" Operator="DataTypeCheck" Type="Date" ControlToValidate="txbFecha" runat="server" ForeColor="Red" Display="Dynamic" />
-                
+                <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="#D8D8D8" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
+                    <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                    <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+                    <OtherMonthDayStyle ForeColor="#999999" />
+                    <SelectedDayStyle BackColor="#BDBDBD" ForeColor="White" />
+                    <TitleStyle BackColor="White" BorderColor="#D8D8D8" BorderWidth="1px" Font-Bold="True" Font-Size="12pt" ForeColor="#424242" />
+                    <TodayDayStyle BackColor="#CCCCCC" />
+                </asp:Calendar>
+
                 <h4>Descripción</h4>
-                <asp:TextBox ID="txbDescrip" type="text" class="form-control" runat="server" TextMode="MultiLine" Rows="5"></asp:TextBox>
-                <asp:RequiredFieldValidator ErrorMessage="Ingrese una descripción del evento" ControlToValidate="txbDescrip" runat="server" ForeColor="Red" Display="Dynamic" />
+                <textarea id="TextArea1" class="form-control" rows="3"></textarea>
 
                 <h4>Recetas</h4>
                 <div class="checkbox">
-                    <asp:CheckBoxList ID="cbRecetas" runat="server" type="checkbox">
+                    <asp:CheckBoxList ID="CheckBoxList1" runat="server" type="checkbox">
                         <asp:ListItem>Receta1</asp:ListItem>
                         <asp:ListItem>Receta2</asp:ListItem>
                     </asp:CheckBoxList>
-                    <script>
-                        function ValidateCheckBoxList(sender, args) {
-                             args.IsValid = false;
-                             jQuery(".CheckBoxList").find(":checkbox").each(function() {
-                                 if (jQuery(this).attr("checked")) {
-                                     args.IsValid = true;
-                                    return;
-                                 }
-                             });
-                         }
-                    </script>
                 </div>
 
                 <div class="row">
