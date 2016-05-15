@@ -8,7 +8,7 @@
             <div class="col-lg-3"></div>
             <div class="col-lg-6 center">
                 <h1>Reservas realizadas</h1> <hr />
-                <asp:GridView ID="grillaEventosReservados" runat="server">
+                <asp:GridView class="table table-striped" ID="grillaEventosReservados" runat="server">
                     <Columns>
                     </Columns>
                 </asp:GridView>

@@ -40,28 +40,11 @@
                         <asp:ListItem>Receta2</asp:ListItem>
                     </asp:CheckBoxList>
 
-                    <asp:Label ID="Label12" runat="server" Text="Select up to 3 Business Types" CssClass="label_black"></asp:Label>
-                    <asp:TextBox ID="txtCheckbox" runat="server" ValidationGroup="testGroup" Style='display: none;' />
+                    <asp:CustomValidator runat="server" ID="cvmodulelist"
+  ClientValidationFunction="ValidateModuleList" OnServerValidate="cvmodulelist_ServerValidate"
+  ErrorMessage="Please Select Atleast one Module" ></asp:CustomValidator>
 
-                    <asp:RequiredFieldValidator ID="valCheckboxList" Display="Dynamic"
-                        ErrorMessage="At least one business type must be selected"
-                        runat="server" ControlToValidate="txtCheckbox"
-                        ValidationGroup="VGEdit" EnableClientScript="true" CssClass="ErrorLabel_10"
-                        SetFocusOnError="true"  ForeColor="Red" />
 
-                    <script type="text/javascript">
-                        $(function () {
-                            function checkBoxClicked() {
-                                //Get the total of selected CheckBoxes
-                                var n1 = $("#<%= cblBusinessType.ClientID %> input:checked").length;
-                                //Set the value of the txtCheckbox control
-                                $("input:#<%= txtCheckbox.ClientID %>").val(n1 == 0 ? "" : n1);
-                            }
-                            //intercept any check box click event inside the #list Div
-                            $("#<%= cblBusinessType.ClientID %> :checkbox").click(checkBoxClicked);
-
-                        });
-                    </script>
 
                 </div>
 
@@ -72,13 +55,16 @@
                     <div class="col-sm-3 col-lg-3 col-md-3">
                         <asp:TextBox ID="txbCantComenzales" runat="server" type="text" class="form-control" Width="60px"></asp:TextBox>
                     </div>
+                    <div class="col-sm-9 col-lg-9 col-md-9">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ErrorMessage="Ingrese Cantidad Maxima de Comenzales" ControlToValidate="txbCantComenzales" runat="server" ForeColor="Red" Display="Dynamic" />
+                    </div>
                 </div>
 
                 <h4>Dirección completa</h4>
                 <asp:TextBox ID="TxbDireccion" runat="server" type="text" class="form-control" Width="100%"></asp:TextBox>
-
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ErrorMessage="Ingrese una Direccion" ControlToValidate="txbDireccion" runat="server" ForeColor="Red" Display="Dynamic" />
                 <h4>Subir foto</h4>
-                <asp:FileUpload ID="FileUpload1" runat="server" />
+                <asp:FileUpload ID="FileUpload1" runat="server" ForeColor="Red" />
                 <br />
 
                 <asp:Button ID="btnCrearEvento" runat="server" Text="Crear evento" class="btn btn-default btn-lg btn-block" OnClick="btnCrearEvento_Click" />
@@ -87,4 +73,21 @@
         </div>
         <div class="col-sm-4 col-lg-4 col-md-4"></div>
     </div>
+                        <script type="text/javascript">
+                            function verifyCheckboxList(source, arguments) {
+                                var val = document.getElementById("<%# cblBusinessType.ClientID %>");
+                                var col = val.getElementsByTagName("*");
+                                if (col != null) {
+                                    for (i = 0; i < col.length; i++) {
+                                        if (col.item(i).tagName == "INPUT") {
+                                            if (col.item(i).checked) {
+                                                arguments.IsValid = true;
+                                                return;
+                                            }
+                                        }
+                                    }
+                                }
+                                arguments.IsValid = false;
+                            }
+                    </script>
 </asp:Content>

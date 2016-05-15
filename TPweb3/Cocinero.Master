@@ -38,7 +38,7 @@
                         <a href="evento.aspx">Crear evento</a>
                     </li>
                     <li>
-                        <a href="#">Cerrar sesión</a>
+                        <a href="/home.aspx">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>
