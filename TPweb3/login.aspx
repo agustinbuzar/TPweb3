@@ -7,11 +7,11 @@
         <div class="col-sm-4 col-lg-4 col-md-4"></div>
         <div class="col-sm-4 col-lg-4 col-md-4">
             <h1>Ingrese a MasterChuf</h1>
-            <asp:TextBox ID="txbMail" runat="server" type="text" class="form-control" placeholder="Ingrese E-mail"></asp:TextBox>
+            <asp:TextBox runat="server" ID="txbMail" runat="server" type="text" class="form-control" placeholder="Ingrese E-mail" Width="352px" />  
             <asp:RequiredFieldValidator ErrorMessage="Complete el E-mail" ControlToValidate="txbMail" runat="server"  ForeColor="Red" />
             <br />
 
-            <asp:TextBox ID="txbContraseña" runat="server" type="password" class="form-control" placeholder="Ingrese contraseña"></asp:TextBox>
+            <asp:TextBox ID="txbContraseña" runat="server" type="password" class="form-control" placeholder="Ingrese contraseña" Width="351px"></asp:TextBox>
             <asp:RequiredFieldValidator ErrorMessage="Ingrese contraseña" ControlToValidate="txbContraseña" runat="server"  ForeColor="Red" />
             <br />
 

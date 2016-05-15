@@ -6,11 +6,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3"></div>
-            <div class="col-lg-6">
-                <h1>Reservar:</h1> <hr />
-                <asp:GridView ID="grillaEventos" runat="server">
+            <div class="col-lg-6 center">
+                <h1>Reservar</h1> <hr />
+                <asp:GridView ID="grillaEventos" runat="server" OnSelectedIndexChanged="grillaEventos_SelectedIndexChanged">
                     <Columns>
-                        <asp:ButtonField CommandName="Cancel" HeaderText="botoncito" ShowHeader="True" Text="Button" />
+                        <asp:ButtonField CommandName="Cancel" ShowHeader="True" Text="Reservar"  />
                     </Columns>
                 </asp:GridView>
             </div>

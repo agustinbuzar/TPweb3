@@ -14,12 +14,19 @@ namespace TPweb3.cocinero
 
         }
 
-        protected void btnIngresar_Click(object sender, EventArgs e)
+        protected void btnCrearReceta_Click(object sender, EventArgs e)
         {
-            if (Page.IsValid) {
-                txbNombre.Text = "pinocho";
+            Page.Validate();
+            if (Page.IsValid)
+            {
+                //crear receta
             }
-                
+            else
+            {
+                //mensaje de error
+            }   
+           
         }
+
     }
 }

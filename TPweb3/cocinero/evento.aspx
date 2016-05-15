@@ -13,27 +13,56 @@
 
             <form id="form1" runat="server">
                 <h4>Nombre</h4>
-                <asp:TextBox ID="txbNombre" runat="server" type="text" class="form-control"></asp:TextBox>
+                <asp:TextBox ID="txbNombre" runat="server" type="text" class="form-control" Width="100%"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ErrorMessage="Ingrese el nombre del evento" ControlToValidate="txbNombre" runat="server" ForeColor="Red" Display="Dynamic" />
 
                 <h4>Seleccione una fecha</h4>
-                <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="#D8D8D8" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
-                    <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
-                    <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
-                    <OtherMonthDayStyle ForeColor="#999999" />
-                    <SelectedDayStyle BackColor="#BDBDBD" ForeColor="White" />
-                    <TitleStyle BackColor="White" BorderColor="#D8D8D8" BorderWidth="1px" Font-Bold="True" Font-Size="12pt" ForeColor="#424242" />
-                    <TodayDayStyle BackColor="#CCCCCC" />
-                </asp:Calendar>
+                <asp:TextBox ID="txbFecha" runat="server" type="text" class="form-control" TextMode="Date" Width="100%"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ErrorMessage="Ingrese una fecha" ControlToValidate="txbFecha" runat="server" ForeColor="Red" Display="Dynamic" />
+                <asp:CompareValidator ID="CompareValidator1" ErrorMessage="Ingrese una fecha valida dd/mm/aaaa" Operator="DataTypeCheck" Type="Date" ControlToValidate="txbFecha" runat="server" ForeColor="Red" Display="Dynamic" />
 
                 <h4>Descripción</h4>
-                <textarea id="TextArea1" class="form-control" rows="3"></textarea>
+                <asp:TextBox ID="txbDescrip" type="text" class="form-control" runat="server" TextMode="MultiLine" Rows="5" Width="100%"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ErrorMessage="Ingrese una descripción del evento" ControlToValidate="txbDescrip" runat="server" ForeColor="Red" Display="Dynamic" />
 
                 <h4>Recetas</h4>
                 <div class="checkbox">
-                    <asp:CheckBoxList ID="CheckBoxList1" runat="server" type="checkbox">
+                    <!--    <asp:CheckBoxList ID="cbRecetas" runat="server" type="checkbox">
                         <asp:ListItem>Receta1</asp:ListItem>
                         <asp:ListItem>Receta2</asp:ListItem>
                     </asp:CheckBoxList>
+                    <asp:CustomValidator ErrorMessage="Debe elejir al menos una reseta"  runat="server" />
+                    <asp:ValidationSummary runat="server" />
+                  -->
+
+                    <asp:CheckBoxList ID="cblBusinessType" runat="server" CssClass="checkbox" ValidationGroup="VGEdit">
+                         <asp:ListItem>Receta1</asp:ListItem>
+                        <asp:ListItem>Receta2</asp:ListItem>
+                    </asp:CheckBoxList>
+
+                    <asp:Label ID="Label12" runat="server" Text="Select up to 3 Business Types" CssClass="label_black"></asp:Label>
+                    <asp:TextBox ID="txtCheckbox" runat="server" ValidationGroup="testGroup" Style='display: none;' />
+
+                    <asp:RequiredFieldValidator ID="valCheckboxList" Display="Dynamic"
+                        ErrorMessage="At least one business type must be selected"
+                        runat="server" ControlToValidate="txtCheckbox"
+                        ValidationGroup="VGEdit" EnableClientScript="true" CssClass="ErrorLabel_10"
+                        SetFocusOnError="true"  ForeColor="Red" />
+
+                    <script type="text/javascript">
+                        $(function () {
+                            function checkBoxClicked() {
+                                //Get the total of selected CheckBoxes
+                                var n1 = $("#<%= cblBusinessType.ClientID %> input:checked").length;
+                                //Set the value of the txtCheckbox control
+                                $("input:#<%= txtCheckbox.ClientID %>").val(n1 == 0 ? "" : n1);
+                            }
+                            //intercept any check box click event inside the #list Div
+                            $("#<%= cblBusinessType.ClientID %> :checkbox").click(checkBoxClicked);
+
+                        });
+                    </script>
+
                 </div>
 
                 <div class="row">
@@ -41,18 +70,18 @@
                         <h4>Cantidad máxima de comenzales</h4>
                     </div>
                     <div class="col-sm-3 col-lg-3 col-md-3">
-                        <asp:TextBox ID="txbCantComenzales" runat="server" type="text" class="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txbCantComenzales" runat="server" type="text" class="form-control" Width="60px"></asp:TextBox>
                     </div>
                 </div>
 
                 <h4>Dirección completa</h4>
-                <asp:TextBox ID="TxbDireccion" runat="server" type="text" class="form-control"></asp:TextBox>
+                <asp:TextBox ID="TxbDireccion" runat="server" type="text" class="form-control" Width="100%"></asp:TextBox>
 
                 <h4>Subir foto</h4>
                 <asp:FileUpload ID="FileUpload1" runat="server" />
                 <br />
 
-                <asp:Button ID="btnIngresar" runat="server" Text="Crear" class="btn btn-default btn-lg btn-block" />
+                <asp:Button ID="btnCrearEvento" runat="server" Text="Crear evento" class="btn btn-default btn-lg btn-block" OnClick="btnCrearEvento_Click" />
             </form>
 
         </div>
