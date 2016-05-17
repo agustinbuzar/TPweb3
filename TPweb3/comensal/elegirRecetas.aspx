@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="formElegirRecetas" runat="server">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3"></div>
@@ -37,8 +36,6 @@
                 </div>
             </div>
         </div>
-    </form>
-
     <script type="text/javascript">
         function verifyCheckboxList(source, arguments) {
             var val = document.getElementById("<%# cblElegirRecetas.ClientID %>");

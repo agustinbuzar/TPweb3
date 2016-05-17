@@ -70,17 +70,28 @@
     <Content Include="content\css\bootstrap.css" />
     <Content Include="content\css\bootstrap.min.css" />
     <Content Include="content\css\style.css" />
-    <Content Include="home.aspx" />
-    <Content Include="join.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="registracion.aspx" />
     <Content Include="login.aspx" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery.min.js" />
     <Content Include="scripts\npm.js" />
+    <Content Include="ucMenuAnonimo.ascx" />
+    <Content Include="ucMenuCocinero.ascx" />
+    <Content Include="ucMenuComensal.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base.Master.cs">
+      <DependentUpon>Base.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base.Master.designer.cs">
+      <DependentUpon>Base.Master</DependentUpon>
+    </Compile>
     <Compile Include="clases\Evento.cs" />
     <Compile Include="Cocinero.Master.cs">
       <DependentUpon>Cocinero.Master</DependentUpon>
@@ -152,26 +163,26 @@
     <Compile Include="comentarios.aspx.designer.cs">
       <DependentUpon>comentarios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.Master.cs">
-      <DependentUpon>Default.Master</DependentUpon>
+    <Compile Include="Anonimo.Master.cs">
+      <DependentUpon>Anonimo.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.Master.designer.cs">
-      <DependentUpon>Default.Master</DependentUpon>
+    <Compile Include="Anonimo.Master.designer.cs">
+      <DependentUpon>Anonimo.Master</DependentUpon>
     </Compile>
-    <Compile Include="home.aspx.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.aspx.designer.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="join.aspx.cs">
-      <DependentUpon>join.aspx</DependentUpon>
+    <Compile Include="registracion.aspx.cs">
+      <DependentUpon>registracion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="join.aspx.designer.cs">
-      <DependentUpon>join.aspx</DependentUpon>
+    <Compile Include="registracion.aspx.designer.cs">
+      <DependentUpon>registracion.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -181,13 +192,35 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucMenuAnonimo.ascx.cs">
+      <DependentUpon>ucMenuAnonimo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucMenuAnonimo.ascx.designer.cs">
+      <DependentUpon>ucMenuAnonimo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucMenuCocinero.ascx.cs">
+      <DependentUpon>ucMenuCocinero.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucMenuCocinero.ascx.designer.cs">
+      <DependentUpon>ucMenuCocinero.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucMenuComensal.ascx.cs">
+      <DependentUpon>ucMenuComensal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucMenuComensal.ascx.designer.cs">
+      <DependentUpon>ucMenuComensal.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.Master" />
+    <Content Include="Anonimo.Master" />
     <Content Include="content\css\bootstrap-theme.css.map" />
     <Content Include="content\css\bootstrap.css.map" />
     <Content Include="Cocinero.Master" />
     <Content Include="Comensal.Master" />
+    <Content Include="Base.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -13,15 +13,6 @@ namespace TPweb3.comensal {
     public partial class calificarEvento {
         
         /// <summary>
-        /// Control formCalificarEvento.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formCalificarEvento;
-        
-        /// <summary>
         /// Control txbCalificacion.
         /// </summary>
         /// <remarks>

@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Base.Master" AutoEventWireup="true" CodeBehind="Anonimo.Master.cs" Inherits="TPweb3.Default" %>
+
+<%@ Register Src="~/ucMenuAnonimo.ascx" TagPrefix="uc1" TagName="ucMenuAnonimo" %>
+
+<asp:Content ID="content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="content2" ContentPlaceHolderID="ContentPlaceHolderBodyMaster" runat="server">
+
+    <uc1:ucMenuAnonimo runat="server" id="ucMenuAnonimo" />
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</asp:Content>

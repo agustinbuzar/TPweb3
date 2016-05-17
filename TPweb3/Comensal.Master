@@ -1,46 +1,14 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Comensal.master.cs" Inherits="TPweb3.Comensal" %>
+﻿<%@ Master Language="C#" MasterPageFile="~/Base.Master" AutoEventWireup="true" CodeBehind="Comensal.master.cs" Inherits="TPweb3.Comensal" %>
 
-<!DOCTYPE html>
+<%@ Register Src="~/ucMenuComensal.ascx" TagPrefix="uc1" TagName="ucMenuComensal" %>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="content/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-    <link href="content/css/style.css" rel="stylesheet" media="screen" />
-    <script src="scripts/bootstrap.min.js"></script>
-
-    <title>APP web3</title>
-
+<asp:Content ID="content1" ContentPlaceHolderID="head" runat="server">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-</head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../home.aspx">MasterChuf</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="perfil.aspx">Mis reservas</a>
-                    </li>
-                    <li>
-                        <a href="reservar.aspx">Reservar</a>
-                    </li>
-                    <li>
-                        <a href="../home.aspx">Cerrar sesión</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+</asp:Content>
+<asp:Content ID="content2" ContentPlaceHolderID="ContentPlaceHolderBodyMaster" runat="server">
+    
+<uc1:ucMenuComensal runat="server" id="ucMenuComensal" />
 
     <div class="container">
         <div>
@@ -48,9 +16,4 @@
             </asp:ContentPlaceHolder>
         </div>
     </div>
-
-    <div class="pie">
-        Programación web 3 - Velazco, Murano, Calvo, Buzarquis
-    </div>
-</body>
-</html>
+</asp:Content>

@@ -11,7 +11,11 @@ namespace TPweb3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if ((string)Session["user"] != "comensal")
+            {
+                Session.Abandon();
+                Response.Redirect("../login.aspx");
+            }
         }
     }
 }
