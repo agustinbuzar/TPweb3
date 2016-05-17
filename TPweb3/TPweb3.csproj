@@ -60,6 +60,8 @@
     <Content Include="cocinero\evento.aspx" />
     <Content Include="cocinero\perfil.aspx" />
     <Content Include="cocinero\receta.aspx" />
+    <Content Include="comensal\calificarEvento.aspx" />
+    <Content Include="comensal\elegirRecetas.aspx" />
     <Content Include="comensal\perfil.aspx" />
     <Content Include="comensal\reservar.aspx" />
     <Content Include="comentarios.aspx" />
@@ -114,6 +116,20 @@
     </Compile>
     <Compile Include="Comensal.Master.designer.cs">
       <DependentUpon>Comensal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="comensal\calificarEvento.aspx.cs">
+      <DependentUpon>calificarEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comensal\calificarEvento.aspx.designer.cs">
+      <DependentUpon>calificarEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comensal\elegirRecetas.aspx.cs">
+      <DependentUpon>elegirRecetas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comensal\elegirRecetas.aspx.designer.cs">
+      <DependentUpon>elegirRecetas.aspx</DependentUpon>
     </Compile>
     <Compile Include="comensal\perfil.aspx.cs">
       <DependentUpon>perfil.aspx</DependentUpon>

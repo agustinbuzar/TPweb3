@@ -13,13 +13,13 @@ namespace TPweb3.cocinero {
     public partial class evento {
         
         /// <summary>
-        /// Control form1.
+        /// Control formCrearEvento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formCrearEvento;
         
         /// <summary>
         /// Control txbNombre.
@@ -85,22 +85,13 @@ namespace TPweb3.cocinero {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
-        /// Control cbRecetas.
+        /// Control cblRecetas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList cbRecetas;
-        
-        /// <summary>
-        /// Control cblBusinessType.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList cblBusinessType;
+        protected global::System.Web.UI.WebControls.CheckBoxList cblRecetas;
         
         /// <summary>
         /// Control cvmodulelist.
@@ -112,22 +103,31 @@ namespace TPweb3.cocinero {
         protected global::System.Web.UI.WebControls.CustomValidator cvmodulelist;
         
         /// <summary>
-        /// Control txbCantComenzales.
+        /// Control txbCantComensales.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbCantComenzales;
+        protected global::System.Web.UI.WebControls.TextBox txbCantComensales;
         
         /// <summary>
-        /// Control RequiredFieldValidator4.
+        /// Control rvfCantComensales.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rvfCantComensales;
+        
+        /// <summary>
+        /// Control cvCantComensales.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvCantComensales;
         
         /// <summary>
         /// Control TxbDireccion.
@@ -139,13 +139,13 @@ namespace TPweb3.cocinero {
         protected global::System.Web.UI.WebControls.TextBox TxbDireccion;
         
         /// <summary>
-        /// Control RequiredFieldValidator5.
+        /// Control rfvDireccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDireccion;
         
         /// <summary>
         /// Control FileUpload1.

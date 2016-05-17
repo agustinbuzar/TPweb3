@@ -19,21 +19,23 @@ namespace TPweb3.cocinero
             Page.Validate();
             if (Page.IsValid)
             {
-                Response.Redirect("pepe");
+                Response.Redirect("../home.aspx");
+                
             }
             else
             {
-                //mensaje de error
+                   
             }
         }
 
         protected void cvmodulelist_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            if (cblBusinessType.SelectedValue != "")
+            if (cblRecetas.SelectedValue != "")
             {
                 args.IsValid = true;
             }
-            else {
+            else
+            {
                 args.IsValid = false;
             }
         }
