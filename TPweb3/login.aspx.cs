@@ -20,6 +20,8 @@ namespace TPweb3
             if (Page.IsValid)
             {
                 var user = txbMail.Text;
+                Session["user"] = user;
+
                 string url;
 
                 switch (user)

@@ -40,6 +40,33 @@ namespace TPweb3.comensal {
         protected global::System.Web.UI.WebControls.CustomValidator cvmodulelist;
         
         /// <summary>
+        /// Control txbCantPersonas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txbCantPersonas;
+        
+        /// <summary>
+        /// Control rfvCantPersonas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCantPersonas;
+        
+        /// <summary>
+        /// Control rvCantPersonas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator rvCantPersonas;
+        
+        /// <summary>
         /// Control btnReservarEvento.
         /// </summary>
         /// <remarks>

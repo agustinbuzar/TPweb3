@@ -34,11 +34,9 @@
     </nav>
 
     <form id="form1" runat="server">
-    <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
         
         </asp:ContentPlaceHolder>
-    </div>
     </form>
 
     <div class="pie">

@@ -8,7 +8,7 @@
             <div class="col-lg-3"></div>
             <div class="col-lg-6 center">
                 <h1>Reservas realizadas</h1> <hr />
-                <asp:GridView  CssClass="table table-bordered bs-table" ID="grillaEventosReservados" runat="server">
+                <asp:GridView  CssClass="table table-bordered bs-table white" ID="grillaEventosReservados" runat="server">
                      <Columns>
                             <asp:TemplateField ItemStyle-HorizontalAlign="Center" HeaderStyle-Width="200px">
                                 <ItemTemplate>

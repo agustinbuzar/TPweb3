@@ -11,15 +11,22 @@ namespace TPweb3.cocinero
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if ((string)Session["user"] != "cocinero")
+            {
+                Session.Abandon();
+                Response.Redirect("../login.aspx");
+            }
         }
 
         protected void btnCrearReceta_Click(object sender, EventArgs e)
         {
+            string url;
             Page.Validate();
+
             if (Page.IsValid)
             {
-                //crear receta
+                url = "perfil.aspx";
+                Response.Redirect(url);
             }
             else
             {

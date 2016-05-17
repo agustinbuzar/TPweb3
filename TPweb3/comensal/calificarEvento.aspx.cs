@@ -12,6 +12,12 @@ namespace TPweb3.comensal
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if ((string)Session["user"] != "comensal")
+            {
+                Session.Abandon();
+                Response.Redirect("../login.aspx");
+            }
+
         }
 
         protected void btnCalificarEvento_Click(object sender, EventArgs e)

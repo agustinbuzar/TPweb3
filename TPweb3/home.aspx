@@ -17,7 +17,7 @@
                                 </h4>
                             </div>
                             <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
+                                <a href="comentarios.aspx"><p class="pull-right">15 reviews</p></a>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>

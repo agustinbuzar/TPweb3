@@ -2,6 +2,7 @@ body{
     font-family: "Helvetica","Verdana","Arial";
     padding-top: 50px;
     height: 100%;
+    background: url("../img/gorro_fondo.png");
 }
 .pie{
     text-align: center;

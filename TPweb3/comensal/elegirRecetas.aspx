@@ -17,10 +17,21 @@
                         ClientValidationFunction="ValidateModuleList" OnServerValidate="cvElegirRecetas_ServerValidate"
                         ErrorMessage="Seleccione al menos una receta" ForeColor="Red"></asp:CustomValidator>
 
+                    <div class="row">
+                        <div class="col-lg-6">Cantidad de personas</div>
+                        <div class="col-lg-6">
+                            <asp:TextBox ID="txbCantPersonas" runat="server" type="text" class="form-control" Width="100%" />
+                            <asp:RequiredFieldValidator ID="rfvCantPersonas" ErrorMessage="Ingrese la cantidad de personas" ControlToValidate="txbCantPersonas" runat="server" ForeColor="Red" Display="Dynamic" />  
+                            <asp:CompareValidator ID="rvCantPersonas" ErrorMessage="Ingrese un valor numérico" ControlToValidate="txbCantPersonas" runat="server" Type="Integer" Operator="DataTypeCheck" ForeColor="Red" Display="Dynamic"/>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                    </div>
 
                     <asp:Button ID="btnReservarEvento" runat="server" Text="Reservar evento" class="btn btn-default btn-lg btn-block" OnClick="btnReservarEvento_Click" />
 
-                    <asp:Label ID="lblServidor" runat="server" ></asp:Label>
+                    <asp:Label ID="lblServidor" runat="server"></asp:Label>
                 </div>
                 <div class="col-lg-3">
                 </div>
@@ -31,18 +42,18 @@
     <script type="text/javascript">
         function verifyCheckboxList(source, arguments) {
             var val = document.getElementById("<%# cblElegirRecetas.ClientID %>");
-             var col = val.getElementsByTagName("*");
-             if (col != null) {
-                 for (i = 0; i < col.length; i++) {
-                     if (col.item(i).tagName == "INPUT") {
-                         if (col.item(i).checked) {
-                             arguments.IsValid = true;
-                             return;
-                         }
-                     }
-                 }
-             }
-             arguments.IsValid = false;
-         }
+            var col = val.getElementsByTagName("*");
+            if (col != null) {
+                for (i = 0; i < col.length; i++) {
+                    if (col.item(i).tagName == "INPUT") {
+                        if (col.item(i).checked) {
+                            arguments.IsValid = true;
+                            return;
+                        }
+                    }
+                }
+            }
+            arguments.IsValid = false;
+        }
     </script>
 </asp:Content>

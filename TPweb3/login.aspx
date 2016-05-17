@@ -14,7 +14,7 @@
             <asp:TextBox ID="txbContraseña" runat="server" type="password" class="form-control" placeholder="Ingrese contraseña" Width="351px"></asp:TextBox>
             <asp:RequiredFieldValidator ErrorMessage="Ingrese contraseña" ControlToValidate="txbContraseña" runat="server"  ForeColor="Red" />
             <br />
-
+            
             <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" class="btn btn-default btn-lg btn-block" OnClick="btnIngresar_Click" />
         </div>
         <div class="col-sm-4 col-lg-4 col-md-4"></div>
