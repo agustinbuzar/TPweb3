@@ -11,7 +11,10 @@
                     <h1>Elegir las recetas</h1>
                     <hr />
 
-                    <asp:CheckBoxList ID="cblElegirRecetas" runat="server" CssClass="checkbox" ValidationGroup="VGEdit"></asp:CheckBoxList>
+                    <asp:CheckBoxList ID="cblElegirRecetas" runat="server" CssClass="checkbox" ValidationGroup="VGEdit">
+                            <asp:ListItem>Receta1</asp:ListItem>
+                            <asp:ListItem>Receta2</asp:ListItem>
+                    </asp:CheckBoxList>
                     <asp:CustomValidator runat="server" ID="cvmodulelist"
                         ClientValidationFunction="ValidateModuleList" OnServerValidate="cvElegirRecetas_ServerValidate"
                         ErrorMessage="Seleccione al menos una receta" ForeColor="Red"></asp:CustomValidator>

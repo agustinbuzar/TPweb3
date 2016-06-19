@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3"></div>
-            <div class="col-lg-6 center">
+            <div class="col-lg-12 center">
                 <h1>Reservas realizadas</h1> <hr />
                 <asp:GridView  CssClass="table table-bordered bs-table white" ID="grillaEventosReservados" runat="server">
                      <Columns>

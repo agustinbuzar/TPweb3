@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using TPweb3.clases;
 
 
 namespace TPweb3.comensal
@@ -15,17 +14,6 @@ namespace TPweb3.comensal
         {
 
 
-            List<Receta> recetas = new List<Receta>();
-            
-            Receta recetita = new Receta();
-            recetita.Nombre = "arroz con pollo";
-            recetas.Add(recetita);
-
-            recetita.Nombre = "Polenta";
-            recetas.Add(recetita);
-
-            cblElegirRecetas.DataSource = recetas;
-            cblElegirRecetas.DataBind();
         }
 
         protected void cvElegirRecetas_ServerValidate(object source, ServerValidateEventArgs args)

@@ -1,0 +1,9 @@
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\repositorios\bin\Debug\repositorios.dll
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\repositorios\bin\Debug\repositorios.pdb
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\repositorios\bin\Debug\accesoDatos.dll
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\repositorios\bin\Debug\EntityFramework.dll
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\repositorios\bin\Debug\accesoDatos.pdb
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\repositorios\bin\Debug\EntityFramework.xml
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\repositorios\obj\Debug\repositorios.csprojResolveAssemblyReference.cache
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\repositorios\obj\Debug\repositorios.dll
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\repositorios\obj\Debug\repositorios.pdb

@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\practicaEntity\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -70,6 +74,9 @@
     <Content Include="content\css\bootstrap.css" />
     <Content Include="content\css\bootstrap.min.css" />
     <Content Include="content\css\style.css" />
+    <Content Include="content\img\img4.jpg" />
+    <Content Include="content\img\img5.jpg" />
+    <Content Include="content\img\img6.jpg" />
     <Content Include="default.aspx" />
     <Content Include="registracion.aspx" />
     <Content Include="login.aspx" />
@@ -77,6 +84,7 @@
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery.min.js" />
     <Content Include="scripts\npm.js" />
+    <Content Include="scripts\Nuestro.js" />
     <Content Include="ucMenuAnonimo.ascx" />
     <Content Include="ucMenuCocinero.ascx" />
     <Content Include="ucMenuComensal.ascx" />
@@ -92,7 +100,6 @@
     <Compile Include="Base.Master.designer.cs">
       <DependentUpon>Base.Master</DependentUpon>
     </Compile>
-    <Compile Include="clases\Evento.cs" />
     <Compile Include="Cocinero.Master.cs">
       <DependentUpon>Cocinero.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -229,7 +236,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="content\img\" />
+    <ProjectReference Include="..\accesoDatos\accesoDatos.csproj">
+      <Project>{ad85641c-ba81-4181-9130-c4d8bd30b500}</Project>
+      <Name>accesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\repositorios\repositorios.csproj">
+      <Project>{053e9209-47d8-4364-a6ed-359fb4af48d2}</Project>
+      <Name>repositorios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="clases\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

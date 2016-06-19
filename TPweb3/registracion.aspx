@@ -29,12 +29,13 @@
 
             <h4>Elegir un perfir</h4>
             <asp:RadioButtonList ID="rblPerfil" runat="server" CssClass="radio" Width="100%">
-                <asp:ListItem>Cocinero</asp:ListItem>
-                <asp:ListItem>Comenzal</asp:ListItem>
+                <asp:ListItem Value="1">Cocinero</asp:ListItem>
+                <asp:ListItem Value="2">Comenzal</asp:ListItem>
             </asp:RadioButtonList>
             <asp:RequiredFieldValidator ErrorMessage="Seleccione una opción" ControlToValidate="rblPerfil" runat="server" ForeColor="Red" Display="Dynamic"/>
             <br />
 
+            <asp:Label ID="Label1" runat="server" Text="" ForeColor="Red"></asp:Label>
 
             <asp:Button ID="btnRegistrar" runat="server" Text="Ingresar" class="btn btn-default btn-lg btn-block" OnClick="btnRegistrar_Click" />
         </div>

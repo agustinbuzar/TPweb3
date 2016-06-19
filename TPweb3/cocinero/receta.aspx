@@ -39,9 +39,9 @@
             <h4>Tipo de receta</h4>
             <asp:DropDownList ID="ddlTipoReceta" runat="server" class="form-control">
                 <asp:ListItem>-Seleccione tipo-</asp:ListItem>
-                <asp:ListItem>Gourmet</asp:ListItem>
-                <asp:ListItem>Diet</asp:ListItem>
-                <asp:ListItem>Casera</asp:ListItem>
+                <asp:ListItem Value="1">Gourmet</asp:ListItem>
+                <asp:ListItem Value="2">Diet</asp:ListItem>
+                <asp:ListItem Value="3">Casera</asp:ListItem>
             </asp:DropDownList>
             <asp:RequiredFieldValidator ErrorMessage="Seleccine un tipo de receta" ControlToValidate="ddlTipoReceta" InitialValue="-Seleccione tipo-" runat="server" ForeColor="Red" Display="Dynamic" />
             <br />

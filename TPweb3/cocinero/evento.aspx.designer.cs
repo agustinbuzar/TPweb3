@@ -85,15 +85,6 @@ namespace TPweb3.cocinero {
         protected global::System.Web.UI.WebControls.CheckBoxList cblRecetas;
         
         /// <summary>
-        /// Control cvmodulelist.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CustomValidator cvmodulelist;
-        
-        /// <summary>
         /// Control txbCantComensales.
         /// </summary>
         /// <remarks>

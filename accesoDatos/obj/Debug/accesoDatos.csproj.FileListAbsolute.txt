@@ -1,0 +1,8 @@
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\accesoDatos\bin\Debug\accesoDatos.dll.config
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\accesoDatos\bin\Debug\accesoDatos.dll
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\accesoDatos\bin\Debug\accesoDatos.pdb
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\accesoDatos\bin\Debug\EntityFramework.dll
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\accesoDatos\bin\Debug\EntityFramework.xml
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\accesoDatos\obj\Debug\accesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\accesoDatos\obj\Debug\accesoDatos.dll
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\accesoDatos\obj\Debug\accesoDatos.pdb

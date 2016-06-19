@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using accesoDatos;
+using repositorios;
 
 namespace TPweb3
 {
@@ -11,7 +13,8 @@ namespace TPweb3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if ((string)Session["user"] != "cocinero")
+            Usuarios usuario = (Usuarios)Session["user"];
+            if (usuario.IdTipoUsuario != 1)
             {
                 Session.Abandon();
                 Response.Redirect("../login.aspx");

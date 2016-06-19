@@ -13,3 +13,19 @@ C:\Users\nach\Documents\GitHub\TPweb3-master\TPweb3\bin\TPweb3.pdb
 C:\Users\nach\Documents\GitHub\TPweb3-master\TPweb3\obj\Debug\TPweb3.csprojResolveAssemblyReference.cache
 C:\Users\nach\Documents\GitHub\TPweb3-master\TPweb3\obj\Debug\TPweb3.dll
 C:\Users\nach\Documents\GitHub\TPweb3-master\TPweb3\obj\Debug\TPweb3.pdb
+C:\Users\agustinbuzar\Desktop\TPweb3-master\TPweb3\bin\TPweb3.dll
+C:\Users\agustinbuzar\Desktop\TPweb3-master\TPweb3\bin\TPweb3.pdb
+C:\Users\agustinbuzar\Desktop\TPweb3-master\TPweb3\obj\Debug\TPweb3.csprojResolveAssemblyReference.cache
+C:\Users\agustinbuzar\Desktop\TPweb3-master\TPweb3\obj\Debug\TPweb3.dll
+C:\Users\agustinbuzar\Desktop\TPweb3-master\TPweb3\obj\Debug\TPweb3.pdb
+C:\Users\agustinbuzar\Desktop\TPweb3\TPweb3\bin\TPweb3.dll
+C:\Users\agustinbuzar\Desktop\TPweb3\TPweb3\bin\TPweb3.pdb
+C:\Users\agustinbuzar\Desktop\TPweb3\TPweb3\obj\Debug\TPweb3.csprojResolveAssemblyReference.cache
+C:\Users\agustinbuzar\Desktop\TPweb3\TPweb3\obj\Debug\TPweb3.dll
+C:\Users\agustinbuzar\Desktop\TPweb3\TPweb3\obj\Debug\TPweb3.pdb
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\TPweb3\bin\accesoDatos.dll
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\TPweb3\bin\repositorios.dll
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\TPweb3\bin\EntityFramework.dll
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\TPweb3\bin\accesoDatos.pdb
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\TPweb3\bin\repositorios.pdb
+C:\Users\agustinbuzar\Documents\Visual Studio 2012\Projects\TPweb3\TPweb3\bin\EntityFramework.xml

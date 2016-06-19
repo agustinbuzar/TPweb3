@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPweb3", "TPweb3\TPweb3.csproj", "{46BB9F11-AE2F-424B-9738-FA241043F756}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repositorios", "repositorios\repositorios.csproj", "{053E9209-47D8-4364-A6ED-359FB4AF48D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "accesoDatos", "accesoDatos\accesoDatos.csproj", "{AD85641C-BA81-4181-9130-C4D8BD30B500}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{46BB9F11-AE2F-424B-9738-FA241043F756}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46BB9F11-AE2F-424B-9738-FA241043F756}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46BB9F11-AE2F-424B-9738-FA241043F756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053E9209-47D8-4364-A6ED-359FB4AF48D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053E9209-47D8-4364-A6ED-359FB4AF48D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053E9209-47D8-4364-A6ED-359FB4AF48D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053E9209-47D8-4364-A6ED-359FB4AF48D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD85641C-BA81-4181-9130-C4D8BD30B500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD85641C-BA81-4181-9130-C4D8BD30B500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD85641C-BA81-4181-9130-C4D8BD30B500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD85641C-BA81-4181-9130-C4D8BD30B500}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
